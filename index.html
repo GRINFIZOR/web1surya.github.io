@@ -11,6 +11,11 @@
     <!-- boostraps icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <!-- akhir bootstraps icon -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Akhir AOS -->
+
     <!-- my css -->
     <link rel="stylesheet" href="style.css" />
     <!-- Akhir css -->
@@ -64,22 +69,22 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>About me</h2>
+            <h2>About Me</h2>
           </div>
         </div>
-      </div>
-      <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4">
-          <p>
-            Saya adalah seorang murid SMA Negeri 1 banda aceh yang sedang belajar bahasa pemograman dichannel web programming unpas, saya mulai tertarik belajar coding ini sejak sma kelas 10 dan sedang mempersiapkan diri agar bisa menjadi
-            web devolepor
-          </p>
-        </div>
-        <div class="col-md-4">
-          <p>
-            Disela sela kesibukan saya dalam mempelajari bahasa pemograman, saya juga suka menonton sepak bola yaitu club yang saya sukai adalah chelsea football club yang dijuluki sebagai the blues, saya juga sangat terinspirasi dengan
-            pemain sepak bola yang bola yang berada dichelsea yaitu kepa dan jakson dengan sifatnya yang pantang menyerah membuat saya menjadi terinspirasi dengan mereka berdua.
-          </p>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-4" data-aos="fade-right">
+            <p>
+              saya adalah seorang murid SMA Negeri 1 banda aceh yang sedang belajar bahasa pemograman dichannel web programming unpas, saya mulai tertarik belajar coding ini sejak sma kelas 10 dan sedang mempersiapkan diri agar bisa menjadi
+              web devolepor.
+            </p>
+          </div>
+          <div class="col-4" data-aos="fade-left" data-aos-delay="200">
+            <p>
+              Disela sela kesibukan saya dalam mempelajari bahasa pemograman, saya juga suka menonton sepak bola yaitu club yang saya sukai adalah chelsea football club yang dijuluki sebagai the blues, saya juga sangat terinspirasi dengan
+              pemain sepak bola yang bola yang berada dichelsea yaitu kepa dan jakson dengan sifatnya yang pantang menyerah membuat saya menjadi terinspirasi dengan mereka berdua.
+            </p>
+          </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -102,7 +107,7 @@
         </div>
         <div class="row mb-3">
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500">
               <img src="img/coders.jpg" class="card-img-top" alt="code" />
               <div class="card-body">
                 <p class="card-text">bahasa pemograman yang telah dikuasai adalah HTML, CSS, dan Bootstrap</p>
@@ -110,7 +115,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
               <img src="img/coding.jpg" class="card-img-top" alt="code" />
               <div class="card-body">
                 <p class="card-text">pengalaman pertama saya dalam mengoding adalah berhasil membuat website ini dengan sedikit tutorial dari youtube</p>
@@ -118,7 +123,7 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card">
+            <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
               <img src="img/lapangan.jpg" class="card-img-top" alt="lapangan" />
               <div class="card-body">
                 <p class="card-text">selain ngoding saya juga menyukai olahraga yaitu sepakbola dan joging atau berlari</p>
@@ -152,24 +157,20 @@
             <strong>Thank You For Your Information</strong> Pesan anda telah masuk.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>
-
           <form name="CONTACT-CLIEN">
             <div class="mb-3">
               <label for="name" class="form-label">Nama Lengkap</label>
               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
             </div>
-
             <div class="mb-3">
               <label for="email" class="form-label">Email Address</label>
               <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
             </div>
-
             <div class="mb-3">
               <label for="pesan" class="form-label">Pesan</label>
               <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
             </div>
             <button type="submit" class="btn btn-success btn-kirim">Kirim</button>
-
             <button class="btn btn-success btn-loading d-none" type="button" disabled>
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
               Loading...
@@ -193,6 +194,14 @@
     </footer>
     <!-- akhir footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzdvnzBh84jGOk86YdlpItzIeemAaKRzUZ_J4acpspbIcQ49w9WAn0IK2atC3tdTx8/exec';
